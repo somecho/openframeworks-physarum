@@ -12,12 +12,19 @@ public:
 	float maxSpeed;
 	float depositAmt;
 	float senseDist;
+	int numDirs = 32;
 
 	particle();
 	void deposit(ofPixels &trailMap);
 	void sense(ofPixels &trailMap);
 	void move();
 	void wrap();
+	void reset();
+
+	void setMaxSpeed(float n);
+	void setDepositAmt(float n);
+	void setSenseDist(float n);
+	void setNumDirs(int n);
 
 
 };

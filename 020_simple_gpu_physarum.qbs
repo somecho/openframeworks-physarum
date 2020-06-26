@@ -15,9 +15,12 @@ Project{
             'src/main.cpp',
             'src/ofApp.cpp',
             'src/ofApp.h',
+            'src/particle.cpp',
+            'src/particle.h',
         ]
 
         of.addons: [
+            'ofxGui',
         ]
 
         // additional flags for the project. the of module sets some

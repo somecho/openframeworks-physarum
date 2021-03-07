@@ -2,9 +2,9 @@
 
 //--------------------------------------------------------------
 void ofApp::setup(){
-	trailmap.allocate(ofGetWidth(),ofGetHeight(),GL_LUMINANCE);
+	trailmap.allocate(ofGetWidth(),ofGetHeight(),GL_RGB);
 	pixBuffer.allocate(ofGetWidth(),ofGetHeight(),OF_IMAGE_GRAYSCALE);
-	texBuffer.allocate(ofGetWidth(),ofGetHeight(),GL_LUMINANCE);
+	texBuffer.allocate(ofGetWidth(),ofGetHeight(),GL_RGB);
 
 	shader.load("shader");
 
